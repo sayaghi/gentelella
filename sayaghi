@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta charset="utf-8"> 
+ <title>sayaghi php</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+ <!-- Optional Bootstrap theme --> 
+ <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"> 
+ </head> 
+  <body> 
+  <div id="wrapper"> 
+   <!----> 
+   <nav class="navbar-default navbar-static-top" role="navigation"> 
+    <div class="navbar-header"> 
+     <button type="button" id="mybut" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+
+    <div class=" border-bottom"> 
+     <div class="full-left"> 
+      <section class="full-top"> 
+       <button id="toggle"><i class="fa fa-arrows-alt"></i></button> 
+      </section> 
+                    <span class="icon-bar"></span>  
+                    <span class="icon-bar"></span>  
+                    <span class="icon-bar"></span>  
+                </button> 
+   </div> 
+<!-- Collect the nav links, forms, and other content for toggling --> 
+<div class="collapse navbar-collapse" id="سياغي الجومري"> 
+    <ul class="nav navbar-nav">  
+   <li> <a onclick="menu('status');" class="hvr-bounce-to-right active"><i class="fa fa-home nav_icon "></i><span class="nav-label">Home</span> </a> </li> 
+        <li class="active"> <a href="#" class="hvr-bounce-to-right active"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">الشبكة</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse in"> 
+          <li><a href="#" onclick="menu('network_setting');" class="hvr-bounce-to-right active"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li><a href="#" onclick="menu('profiles');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-file-text-o nav_icon"></i>الباقات</a></li> 
+          <li><a href="#" onclick="menu('sellers');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-map-marker nav_icon"></i>نقاط البيع</a></li> 
+         </ul> </li> 
+        <li class="active"> <a href="#" class="hvr-bounce-to-right active"><i class="fa fa-glass nav_icon"></i> <span class="nav-label">المسابقات</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse in"> 
+          <li><a href="#" onclick="menu('contest_setting');" class="hvr-bounce-to-right active"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li class="active"> <a href="#" class="hvr-bounce-to-right active"><i></i><i class="fa fa-credit-card nav_icon"></i> <span class="nav-label">الكروت</span><span class="fa arrow"></span></a> 
+           <ul class="nav nav-second-level collapse in"> 
+            <li><a href="#" onclick="menu('cardset');" class="hvr-bounce-to-right active"> <i></i><i></i><i class="fa fa-cog nav_icon"></i>اعدادات الباقات</a></li> 
+            <li><a href="#" onclick="menu('addcards');" class="hvr-bounce-to-right active"><i></i><i></i><i class="fa fa-credit-card nav_icon"></i>اضافة كروت</a></li> 
+            <li><a href="#" onclick="menu('filescards');" class="hvr-bounce-to-right active"><i></i><i></i><i class="fa fa-folder nav_icon"></i>الملفات</a></li> 
+           </ul> </li> 
+          <li><a href="#" onclick="menu('addq');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-question nav_icon"></i>الاسئلة</a></li> 
+          <li><a href="#" onclick="menu('contestlog');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-file-text-o nav_icon"></i>Log</a></li> 
+         </ul> </li> 
+        <li> <a href="#" onclick="menu('inbox');" class="hvr-bounce-to-right active"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">الرسائل</span> </a> </li> 
+        <li> <a href="#" onclick="menu('notification');" class="hvr-bounce-to-right active"><i class="fa fa-bell nav_icon"></i> <span class="nav-label">التنبيهات</span> </a> </li> 
+        <li><a href="#" onclick="menu('users');" class="hvr-bounce-to-right active"><i class="fa fa-user nav_icon"></i>Users</a></li> 
+        <li><a href="#" onclick="menu('AP_info');" class="hvr-bounce-to-right active"><i class="fa fa-signal nav_icon"></i>اجهزة البث</a></li> 
+        <li><a href="#" onclick="menu('createpage');" class="hvr-bounce-to-right active"><i class="fa fa-desktop nav_icon"></i>تصميم صفحة Hotspot</a></li> 
+        <li class="active"> <a href="#" class="hvr-bounce-to-right active"><i class="fa fa-lock nav_icon"></i> <span class="nav-label">حماية سرقة الماكات</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse in"> 
+          <li><a href="#" onclick="menu('macpro_settings');" class="hvr-bounce-to-right active"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li><a href="#" onclick="menu('macpro_lesses');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-user nav_icon"></i>المستخدمين</a></li> 
+          <li><a href="#" onclick="menu('macpro_log');" class="hvr-bounce-to-right active"><i></i><i class="fa fa-file-text-o nav_icon"></i>Log</a></li> 
+         </ul> </li> 
+        <li><a href="#" onclick="menu('commonq');" class="hvr-bounce-to-right active"><i class="fa fa-question nav_icon"></i>اسئلة شائعة</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </nav> 
+   <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 522px;"> 
+    <div class="content-main"> 
+     <div id="main">
+      <center> 
+       <img border="0" src="images/loading.gif" style="margin-top:10%; margin-bottom:10%;"> 
+      </center>
+     </div> 
+     <div class="outter-wp2"> 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> 
+       <div class="modal-dialog"> 
+        <div class="modal-content"> 
+         <div class="modal-header"> 
+          <button type="button" class="close second" data-dismiss="modal" aria-hidden="true">×</button> 
+          <h2 class="modal-title">الرسائل</h2> 
+         </div> 
+         <!-- --> 
+         <div class="scrollbar" id="style-2"> 
+         </div> 
+         <div class="chat-bottom"> 
+          <form method="post" action="messgsend.php"> 
+           <input type="text" name="mess" placeholder="رد" required> 
+           <input type="submit" name="send" value="إرسال"> 
+          </form> 
+         </div> 
+ 
+ <script src="bootstrap/js/jquery.js"></script> 
+ <script src="bootstrap/js/bootstrap.js"></script> 
+ 
+ 
+</body> 
+ 
+</html>
