@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `control1` (
+  `user_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_name`  NOT NULL,
+  `user_name_network`  NOT NULL,
+  `user_email`  NOT NULL,
+  `user_password`  NOT NULL,
+  `user_city`   NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
